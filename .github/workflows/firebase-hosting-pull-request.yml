@@ -30,6 +30,8 @@ jobs:
           file: "config.toml"
           key: "baseURL"
           value: "${{steps.firebase_preview.outputs.details_url}}/"
+      - name: Build 2
+        run: hugo
       - id: firebase_preview_update_url
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
