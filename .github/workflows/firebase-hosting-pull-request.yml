@@ -24,3 +24,17 @@ jobs:
           FIREBASE_CLI_PREVIEWS: hostingchannels
       - name: output firebase url
         run: echo ${{steps.firebase_preview.outputs.details_url}}
+      - name: Edit Toml
+        uses: ciiiii/toml-editor@1.0.0
+        with:
+          file: "config.toml"
+          key: "baseURL"
+          value: "${{steps.firebase_preview.outputs.details_url}}"
+      - id: firebase_preview_update_url
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_EDE2D }}'
+          projectId: blog-ede2d
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
