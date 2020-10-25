@@ -1,0 +1,24 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "hugo-PaperMod"
+
+[params]
+    # My information
+    author = "Cat Lense"
+    description = "blog about cats"
+    bio = "cat photographer"
+    twitter = "cats"
+    copyright = "Cat Photographer"
+
+    # Tools 
+    enableRSS = true
+    enableDisqus = true
+    disqusShortname = "your_disqus_short_name"
+    enableSummary = true
+    enableGoogleAnalytics = true
+    enableTwitterCard = true
+
+[social]
+    twitter = "https://twitter.com/cats"
+    github = "https://github.com/cats"
