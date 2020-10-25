@@ -29,7 +29,7 @@ jobs:
         with:
           file: "config.toml"
           key: "baseURL"
-          value: "${{steps.firebase_preview.outputs.details_url}}"
+          value: "${{steps.firebase_preview.outputs.details_url}}/"
       - id: firebase_preview_update_url
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
