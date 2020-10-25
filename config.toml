@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://blog-ede2d.web.app/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "hugo-PaperMod"
@@ -20,5 +20,5 @@ theme = "hugo-PaperMod"
     enableTwitterCard = true
 
 [social]
-    twitter = "https://twitter.com/cats"
+    twitter = "https://twitter.com/androidwiltron"
     github = "https://github.com/cats"
