@@ -38,3 +38,5 @@ jobs:
           projectId: blog-ede2d
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+      - name: check hugo toml
+        run: cat config.toml
